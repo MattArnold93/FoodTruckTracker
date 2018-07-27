@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
+import SimpleMap from './MapsComps/mapComponent';
 import logo from './logo.svg';
 import './App.css';
-import GoogleMap from 'google-map-react';
 
-class SimpleMapPage extends Component {
-
-
-  render() {
-    return (
-       <GoogleMap
-        apiKey="AIzaSyB4VKr73W5l4hLfpGuDvWTnPPdGLxruaiQ"
-        zoom="14">
-      </GoogleMap>
-    );
-  }
-}
 
 class App extends Component {
   render() {
@@ -24,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <SimpleMapPage />
+        <SimpleMap />
       </div>
     );
   }
